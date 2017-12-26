@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- FAV ICON -->
+		<link href="images/favicon.png" rel="icon" type="image/x-icon">
+		<!-- FONT AWESOME -->
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<!-- CSS THEME -->
+		<link href="css/theme.css" rel="stylesheet">
+		<!-- CSS GRID -->
+		<link href="css/grid.css" rel="stylesheet">
+		<!-- CSS STYLE -->
+		<link href="css/style.css" rel="stylesheet">
+		<!-- CSS SLICK SLIDER -->
+		<link href="css/slick.css" rel="stylesheet">
+		<link href="css/slick-theme.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<!-- JQuery 1.12.4 -->
+		<script src="js/jquery-1.12.4.js"></script>
+		<!-- GO TO BTN -->
+		<script src="js/go-top.js"></script>
+		<!-- SLICK SLIDER -->
+		<script src="js/slick.js"></script>
+		<script src="js/slick-slider.js"></script>
+		<!-- NAV SIDE MENU -->
+		<script src="js/nav-menu.js"></script>
+		<title>產品 - 分類頁</title>
+	</head>
+	<body>
+		<!-- 購物車 & GO TOP -->
+		<div id="fix-btn-wrap" class="affix text-center">
+			<a href="#" class="shopping-car">
+				<img src="images/icon-shopping-car-002.svg" alt="購物車" title="購物車" class="center-block">		
+				<span class="hidden-xs">
+					購物車
+				</span>
+			</a>
+			<a href="#" class="go-top-btn">
+				<img src="images/icon-top-002.svg" alt="GO-TOP" title="GO-TOP" class="center-block">
+				<span class="hidden-xs">
+					TOP
+				</span>
+			</a>
+		</div>
+
+		<!-- LOGO HEADER - 桌機置上方 - 手機置底層 -->
+		<header id="header-logo-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="header-logo-box">
+							<a href="#">
+								<img src="images/logo-001.png" alt="好鄰居購物網" title="好鄰居購物網" class="logo hidden-xs">
+								<img src="images/logo-002.png" alt="好鄰居購物網" title="好鄰居購物網" class="logo visible-xs">
+							</a>
+						</div>	
+						<div class="header-link-box">
+							<div class="header-input-search hidden-xs">							
+								<input type="text" name="" placeholder="Hi,想找什麼商品嗎?">
+								<i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i>
+							</div>
+							<a href="#" class="display-inline-block text-center">
+								<img src="images/icon-shopping-car-003.svg" alt="購物車" title="購物車" class="hidden-xs">	
+								<img src="images/icon-shopping-car-002.svg" alt="購物車" title="購物車" class="visible-xs-block center-block">
+								<span>
+									購物車
+								</span>
+							</a>
+							<a href="#" class="display-inline-block text-center">
+								<img src="images/icon-member-003.svg" alt="會員專區" title="會員專區" class="hidden-xs">
+								<img src="images/icon-member-002.svg" alt="會員專區" title="會員專區" class="visible-xs-block center-block">
+								<span>
+									會員專區
+								</span>
+							</a>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</header>
+		<!-- 商品導覽 - 桌機置上方 - 手機鎖定左方 -->
+		<nav id="nav-link-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="nav-link-box list-unstyled flex-box">
+							<li>
+								<h3>
+									<a href="#">
+										品排旗艦 
+									</a>
+								</h3>
+							</li>
+							<li>
+								<h3>
+									<a href="#">
+										美妝保養 
+									</a>
+								</h3>
+							</li>
+							<li>
+								<h3>
+									<a href="#">
+										生活居家 
+									</a>
+								</h3>
+							</li>
+							<li>
+								<h3>							
+									<a href="#">
+										日用品 
+									</a>
+								</h3>
+							</li>
+							<li>
+								<h3>
+									<a href="#">
+										居家清潔 
+									</a>
+								</h3>
+							</li>
+							<li>
+								<h3>
+									<a href="#">
+										戶外生活 
+									</a>
+								</h3>
+							</li>
+							<li>
+								<h3>							
+									<a href="#">
+										寵物用品 
+									</a>
+								</h3>
+							</li>
+							<li>
+								<h3>
+									<a href="#">
+										婦嬰保健 
+									</a>
+								</h3>
+							</li>
+							<li>
+								<h3>
+									<a href="#">
+										限量專區 
+									</a>
+								</h3>
+							</li>
+						</ul>
+						<h2 class="visible-xs-block">
+							商品總覽
+						</h2>	
+					</div>
+				</div>
+			</div>
+			<div class="black"></div>
+		</nav>
+
+		<!-- 產品分類頁面 -->
+		<main id="product-classification-page" class="with-aside">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12">
+						<!-- 左側邊欄 -->
+						<aside>
+							<section id="aside-nav">
+								<div class="product-item text-left">
+									<div class="aside-nav-title">									
+										<h4>
+											品牌旗艦 
+										</h4>
+									</div>
+									<ul class="aside-menu-box">
+										<li class="open">
+											<h5>
+												熱門搜尋
+											</h5>
+											<ul class="aside-menu-block">
+												<li>
+													<a href="#">
+														子選單<span>(99)</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														子選單<span>(99)</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														子選單<span>(99)</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<h5>
+												人氣商品
+											</h5>
+											<ul class="aside-menu-block">
+												<li>
+													<a href="#">
+														子選單<span>(99)</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														子選單<span>(99)</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														子選單<span>(99)</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<h5>
+												醫美品牌
+											</h5>
+											<ul class="aside-menu-block">
+												<li>
+													<a href="#">
+														子選單<span>(99)</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														子選單<span>(99)</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														子選單<span>(99)</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<h5>
+												歐美品牌
+											</h5>
+											<ul class="aside-menu-block">
+												<li>
+													<a href="#">
+														子選單<span>(99)</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														子選單<span>(99)</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														子選單<span>(99)</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<h5>
+												專櫃品牌
+											</h5>
+											<ul class="aside-menu-block">
+												<li>
+													<a href="#">
+														子選單<span>(99)</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														子選單<span>(99)</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														子選單<span>(99)</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<section id="aside-banner" class="hidden-xs">
+								<div class="aside-banner-wrap">
+									<div class="aside-banner-title text-left">
+										<img src="images/icon-symbols-house-001.svg" class="icon" title="本期企劃" alt="本期企劃">
+										<h5>
+										本期企劃
+										</h5>
+									</div>
+									<hr>
+									<div class="product-item">
+										<a href="#">
+											<img src="https://api.fnkr.net/testimg/360x600/ddd/FFF/?text=360x600" class="img-responsive">
+										</a>	
+									</div>
+								</div>
+								<div class="aside-banner-wrap">								
+									<div class="aside-banner-title text-left">
+										<img src="images/icon-symbols-tiara-001.svg" class="icon" title="明星商品" alt="明星商品">
+										<h5>
+										明星商品
+										</h5>
+									</div>
+									<hr>
+									<div class="product-item padding">
+										<a href="#">
+											<img src="https://api.fnkr.net/testimg/360x360/ddd/FFF/?text=360x360">
+											<div class="product-name">
+												Dr.Wu超效青春逆齡緊緻組(250ml)
+											</div>
+											<span class="product-price">
+												9999
+											</span>
+										</a>
+									</div>
+								</div>
+								<div class="aside-banner-wrap">
+									<div class="aside-banner-title text-left">
+										<img src="images/icon-symbols-clock-001.svg" class="icon" title="限時搶購" alt="限時搶購">
+										<h5>
+										限時搶購
+										</h5>
+									</div>
+									<hr>
+									<div class="product-item">
+										<a href="#">
+											<img src="https://api.fnkr.net/testimg/360x600/ddd/FFF/?text=360x600" class="img-responsive">
+										</a>	
+									</div>
+								</div>
+								<div class="aside-banner-wrap">
+									<div class="aside-banner-title text-left">
+										<img src="images/icon-symbols-shopping-bag-001.svg" class="icon" title="熱銷推薦" alt="熱銷推薦">
+										<h5>
+										熱銷推薦
+										</h5>
+									</div>
+									<hr>
+									<div class="product-item">
+										<a href="#">
+											<img src="https://api.fnkr.net/testimg/360x600/ddd/FFF/?text=360x600" class="img-responsive">
+										</a>	
+									</div>
+								</div>
+								<div class="aside-banner-wrap">
+									<div class="aside-banner-title text-left">
+										<img src="images/icon-symbols-shopping-bag-001.svg" class="icon" title="影片專欄" alt="影片專欄">
+										<h5>
+										影片專欄
+										</h5>
+									</div>
+									<hr>
+									<div class="product-item">
+			 				 			<div class="video-block">
+											<!-- VIDEO -->
+											<iframe src="https://www.youtube.com/embed/rRzxEiBLQCA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			 				 			</div>
+									</div>
+								</div>
+							</section>
+						</aside>			
+						<!-- 右側 主內容 -->
+						<article>
+							<!-- 輪播主視覺 -->
+							<section>
+								<div class="product-item">
+									<div id="product-classification-slider-main">									
+										<a href="#">
+											<img src="https://api.fnkr.net/testimg/1600x600/d8bdef/FFF/?text=1600x600">
+										</a>
+										<a href="#">
+											<img src="https://api.fnkr.net/testimg/1600x600/8bd4ea/FFF/?text=1600x600">
+										</a>
+										<a href="#">
+											<img src="https://api.fnkr.net/testimg/1600x600/85ddd3/FFF/?text=1600x600">
+										</a>
+									</div>
+								</div>
+							</section>
+							<hr>
+							<!-- 分類推薦商品 -->
+							<section>
+								<div class="section-title-box">
+									<img src="images/icon-good-001.svg" alt="分類推薦商品" title="分類推薦商品" class="icon">
+									<h3>
+										分類推薦商品
+									</h3>
+								</div>
+								<div class="container-fluid">
+									<ul class="row product-classification-box">
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<div class="btn category">
+													五折
+												</div>
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														Dr.Wu超效青春逆齡緊緻組(250ml)
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<div class="btn category">
+													五折
+												</div>
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														Dr.Wu超效青春逆齡緊緻組(250ml)
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<div class="btn category">
+													五折
+												</div>
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														德國BRITA濾水壺-馬利拉(白) 馬利拉白超值包含三芯
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<div class="btn category">
+													五折
+												</div>
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														雀巢多功能智慧感應時尚風咖啡機
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<hr>	
+
+							<!-- 分類商品總覽 -->
+							<section>
+								<div class="section-title-box">
+									<img src="images/icon-hamburger-001.svg" alt="分類商品總覽" title="分類商品總覽" class="icon">
+									<h3>
+										分類商品總覽
+									</h3>
+									<div class="category-box text-right">
+										<ul class="page-list-box text-right list-unstyled display-inline-block hidden-xs">
+											<li>
+												<a href="#">
+													1
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													2
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													3
+												</a>
+											</li>
+											<li class="now-page">
+												<a href="#">
+													4
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													5
+												</a>
+											</li>
+										</ul>
+										<div class="select-item">
+											<select>
+												<option value="#">銷售排行</option>
+												<option value="#">最新到貨</option>
+												<option value="#">價格 由高到低</option>
+												<option value="#">價格 由低到高</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="container-fluid">
+									<ul class="row product-classification-box">
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<div class="btn new">
+													新
+												</div>
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														Dr.Wu超效青春逆齡緊緻組(250ml)
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														Dr.Wu超效青春逆齡緊緻組(250ml)
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														德國BRITA濾水壺-馬利拉(白) 馬利拉白超值包含三芯
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														雀巢多功能智慧感應時尚風咖啡機
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<div class="btn new">
+													新
+												</div>
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														Dr.Wu超效青春逆齡緊緻組(250ml)
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														Dr.Wu超效青春逆齡緊緻組(250ml)
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														德國BRITA濾水壺-馬利拉(白) 馬利拉白超值包含三芯
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														雀巢多功能智慧感應時尚風咖啡機
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<div class="btn new">
+													新
+												</div>
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														Dr.Wu超效青春逆齡緊緻組(250ml)
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														Dr.Wu超效青春逆齡緊緻組(250ml)
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														德國BRITA濾水壺-馬利拉(白) 馬利拉白超值包含三芯
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														雀巢多功能智慧感應時尚風咖啡機
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<div class="btn new">
+													新
+												</div>
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														Dr.Wu超效青春逆齡緊緻組(250ml)
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														Dr.Wu超效青春逆齡緊緻組(250ml)
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														德國BRITA濾水壺-馬利拉(白) 馬利拉白超值包含三芯
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+										<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+											<div class="product-item padding xl">
+												<a href="#">												
+													<img src="https://api.fnkr.net/testimg/300x300/dddddd/FFF/?text=300x300">
+													<span class="product-name">
+														雀巢多功能智慧感應時尚風咖啡機
+													</span>
+													<s class="product-price-original ">
+														99999
+													</s>
+													<span class="special">
+														特價
+													</span>
+													<span class="product-price focus">
+														99999
+													</span>
+												</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+						</article>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- PAGE BTN 翻頁按鈕 -->
+		<div class="page-list-warp">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12">
+						<div class="show-now-content text-center">						
+							共有99999項商品<span class="color-standard">|</span>目前第 000/000 頁
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12">
+						<ul class="page-list-box list-unstyled text-center">
+							<li>
+								<a href="#">
+									第一頁
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									1
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									2
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									3
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									4
+								</a>
+							</li>
+							<li class="now-page">
+								<a>
+									5
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									最末頁
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FOOTER 導覽列 - 桌機手機皆置下方 不浮動 -->
+		<footer id="footer-link-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12">
+						<hr>
+						<ul class="footer-link-box flex-box bg-color-standard">
+							<li class="logo hidden-xs">
+								<a href="#">
+									<img src="images/logo-003.png" alt="好鄰居購物網" title="好鄰居購物網">
+								</a>							
+							</li>
+							<li>
+								<a href="#">
+									公司簡介
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									購物說明
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									退換貨說明
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									常見問題
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									實體店資訊
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									聯絡我們
+								</a>
+							</li>
+							<li class="social">
+								<a href="#">
+									<img src="images/icon-social-facebook-001.svg" alt="追蹤我們" title="追蹤我們">
+								</a>
+								<a href="#">
+									<img src="images/icon-social-line-001.svg" alt="加入LINE好友" title="加入LINE好友">
+								</a>
+							</li>
+						</ul>
+						<p class="copyright text-center color-standard">
+							好鄰居有限公司 版權所有©Copyright 2017 Holingo.Co.,LTD. All Rights Reserved
+						</p>						
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>	

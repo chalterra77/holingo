@@ -1,0 +1,3000 @@
+@charset "UTF-8";
+/*---- 好鄰居購物網 ----*/
+/*---- writen by Chalterra.ann 201712 ----*/
+
+
+/*-------- 以下 全站通用樣式 --------*/
+
+
+/*-------- 以下 右側 浮動按鈕 回TOP 購物車 --------*/
+
+
+#fix-btn-wrap{
+	/* 浮動按鈕外框 */
+	/* GO TOP 樣式 */
+	/* 購物車 SHOPPING CAR 樣式 */
+	/* 浮動按鈕外框 */
+	display: none;
+	right: 1.2em;
+	bottom: 1.2em;
+	z-index: 99;
+}
+
+#fix-btn-wrap a{
+	/* 浮動按鈕外框 */
+	display: block;
+	width: 90px;
+	height: 90px;
+	background-color: #716558;
+	color: #ffffff;
+	opacity: .9;
+	border-radius: 99em;
+	border: 3px solid #fff;
+	margin-top: 1em;
+	box-shadow: 0 0 1.4em rgba(113,101,88,.2);
+}
+
+#fix-btn-wrap a img{
+	/* ICON */
+	height: 2em;
+	line-height: 1;
+	margin-bottom: .2em;
+	margin-top: 1em;
+}
+
+#fix-btn-wrap a span{
+	/* 文字 */
+	letter-spacing: 1px;
+	line-height: 1;
+}
+
+@media screen and (max-width: 991px) {
+
+	#fix-btn-wrap a{
+		width: 72px;
+		height: 72px;
+		border: 2px solid #fff;
+	}
+
+	#fix-btn-wrap a img{
+		/* ICON */
+		height: 1.6em;
+		margin-bottom: .3em;
+		margin-top: .7em;
+	}
+
+	#fix-btn-wrap a span{
+		/* 文字 */
+		font-size: .9em;
+		letter-spacing: 0;
+	}
+	
+}	
+
+@media screen and (max-width: 767px) {
+
+	#fix-btn-wrap{
+		bottom: 7em;
+	}
+	
+	#fix-btn-wrap a{
+		width: 3em;
+		height: 3em;
+		margin-top: .6em;
+	}
+
+	#fix-btn-wrap a img{
+		/* ICON */
+		height: 1.2em;
+		margin: .8em auto;
+	}
+
+}	
+
+@media screen and (max-width: 379px) {
+
+	#fix-btn-wrap{
+		bottom: 5em;
+		right: .6em;
+	}
+	
+	#fix-btn-wrap a{
+		width: 3.4em;
+		height: 3.4em;
+		margin-top: .46em;
+	}
+
+	#fix-btn-wrap a img{
+		/* ICON */
+		height: 1.6em;
+		margin: .8em auto;
+	}
+
+}	
+
+
+/*-------- 以下 FOOTER 內容區塊 --------*/
+
+
+footer#footer-link-wrap{
+	/* FOOTER 外框 */
+	margin-top: 2em;
+}
+
+#footer-link-wrap ul.footer-link-box{
+	/* FOOTER 內框 使用 flex */
+	list-style: none;
+	margin: 0 auto;	
+	padding: 1em 3em;
+	border-radius: 4px;
+	/* 垂直對齊重新設定 */
+	align-items: center;
+}
+
+#footer-link-wrap ul.footer-link-box > li{
+	/* FOOTER 內框 使用 flex */
+	margin: 0;
+	padding: 0;
+}
+
+#footer-link-wrap ul.footer-link-box > li:not(:last-child){
+	/* FOOTER 內框 使用 flex */
+	margin-right: .4em;
+}
+
+#footer-link-wrap ul.footer-link-box > li a{
+	/* FOOTER - 連結 文字 */
+	font-size: 1.2em;
+	line-height: 1;
+}
+
+#footer-link-wrap ul.footer-link-box > li.logo{
+	/* FOOTER 內框 - 第一個logo框 大一點 */
+	width: 20%;
+	flex: 0 1 auto;
+}
+
+#footer-link-wrap ul.footer-link-box > li.logo img{
+	/* FOOTER - 連結 logo */
+	display: block;
+	width: 100%;
+	max-width: 160px;
+}
+
+#footer-link-wrap ul.footer-link-box > li.social{
+	/* FOOTER - 連結 社群分享 */
+}
+
+#footer-link-wrap ul.footer-link-box > li.social a{
+	/* FOOTER - 連結 社群分享 */
+	display: inline-block;
+	background-color: #fff;
+	padding: .26em;
+	border-radius: 99em;
+}
+
+#footer-link-wrap ul.footer-link-box > li.social a:nth-child(1){
+	/* FOOTER - 連結 社群分享 */
+	margin-right: .2em;
+}
+
+#footer-link-wrap ul.footer-link-box > li.social a img{
+	/* FOOTER - 連結 社群分享 */
+	width: 1.2em;
+	line-height: 1;
+}
+
+@media screen and (max-width: 1199px) {
+
+	#footer-link-wrap ul.footer-link-box{
+		padding: 1em 2em;
+	}
+	
+}	
+
+@media screen and (max-width: 991px) {
+
+	#footer-link-wrap ul.footer-link-box{
+		padding: 1em;
+	}
+
+	#footer-link-wrap ul.footer-link-box > li a{
+		font-size: 1em;
+	}
+
+	p.copyright{
+		font-size: .9em;
+		letter-spacing: .6px;
+	}
+	
+}	
+
+@media screen and (max-width: 767px) {
+
+	footer#footer-link-wrap{
+		/* FOOTER 外框 */
+		margin-top: 1em;
+	}
+
+	footer > .container ,
+	footer > .container > .row ,
+	footer > .container > .row > div[class*=col] {
+		margin: 0;
+		padding: 0;
+	}
+
+	#footer-link-wrap ul.footer-link-box{
+		/* FOOTER 內框 使用 flex */
+		border-radius: 0;
+		padding: .6em .6em .6em .6em;
+		justify-content: space-around;
+	}	
+
+	#footer-link-wrap ul.footer-link-box > li{
+		width: 33%;
+		text-align: center;
+	}
+
+	#footer-link-wrap ul.footer-link-box > li:not(:last-child){
+		margin-right: 0;
+		margin-bottom: .6em;
+	}
+
+	#footer-link-wrap ul.footer-link-box > li a{
+		font-size: .9em;
+	}
+
+	#footer-link-wrap ul.footer-link-box > li.social{
+		/* FOOTER - 連結 社群分享 */
+		width: 100%;
+		text-align: center;
+	}
+
+}	
+
+@media screen and (max-width: 667px) {
+
+	#footer-link-wrap ul.footer-link-box > li:not(:last-child){
+		margin-bottom: .8em;
+	}
+
+}	
+
+@media screen and (max-width: 479px) {
+
+	#footer-link-wrap ul.footer-link-box > li:not(:last-child){
+		margin-bottom: 1em;
+	}
+
+	#footer-link-wrap ul.footer-link-box > li.social a:nth-child(1){
+		margin-right: .4em;
+	}
+
+	#footer-link-wrap ul.footer-link-box > li.social a img{
+		width: 2em;
+	}
+
+}	
+
+
+/*-------- 以下 HEADER --------*/
+
+
+#header-logo-wrap{
+	/* 購物首頁 上方 header */
+	position: relative;
+	text-align: right;
+	margin-top: 1em;
+}
+
+#header-logo-wrap .header-logo-box{
+	/* 購物首頁 上方 header - logo 外框 */
+	height: 100%;
+	position: absolute;
+	z-index: 5;
+	left: 6%;
+	/* 往右推 配合屋頂的位置 */
+}
+
+#header-logo-wrap .header-logo-box img.logo{
+	/* 購物首頁 上方 header - logo 外框 */
+	display: block;
+	height: 100%;
+	position: relative;
+	width: auto;
+}
+
+#header-logo-wrap .header-link-box{
+	/* 購物首頁 上方 header - link 外框 */
+	position: relative;
+	height: 100%;
+	padding-top:16px;
+	padding-right:calc(6% + 3em);
+	/* 往左推 配合屋頂的寬度 */
+}
+
+#header-logo-wrap .header-link-box .header-input-search{
+	/* header 的搜尋框 */
+	position: relative;
+	display: inline-block;
+	margin-right: 1.6em;
+	width: 36%;
+	line-height: 36px;
+	max-width: 480px;
+}
+
+#header-logo-wrap .header-link-box .header-input-search i{
+	/* header 的搜尋框 */
+	font-size: 1.2em;
+	line-height: 36px;
+	position: absolute;
+	right: .8em;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+#header-logo-wrap .header-link-box .header-input-search > input{
+	/* header 的搜尋框 */
+	font-size:.9em;
+	height: 36px;
+	padding: 0 3em 0 1.2em;
+	line-height: 36px;
+	width: 100%;
+	border-radius: 99em;
+	border-color:#9b8579;
+	color:#9b8579;
+}
+
+#header-logo-wrap .header-link-box input.header-input-search::placeholder{
+	/* header 的搜尋框 */
+	opacity: .8;
+	color: initial;
+}
+
+#header-logo-wrap .header-link-box a{
+	/* 購物首頁 上方 header - link  */
+	vertical-align: middle;
+}
+
+#header-logo-wrap .header-link-box a:not(:last-child){
+	/* 購物首頁 上方 header - link  */
+	margin-right: 1.2em;
+}
+
+#header-logo-wrap .header-link-box img , 
+#header-logo-wrap .header-link-box span {
+	/* link - img span 設定*/
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+#header-logo-wrap .header-link-box img { 
+	/* link - icon */
+	height: 36px;
+}
+
+#header-logo-wrap .header-link-box span { 
+	/* link - 文字 */
+	font-size: 1.2em;
+}
+
+@media screen and (max-width: 1199px) {
+
+	#header-logo-wrap .header-link-box .header-input-search{
+		width: 30%;
+		height: 32px;
+		line-height: 32px;
+	}
+
+	#header-logo-wrap .header-link-box .header-input-search > i , 
+	#header-logo-wrap .header-link-box .header-input-search > input{
+		height: 32px;
+		line-height: 32px;
+	}
+
+	#header-logo-wrap .header-link-box a:not(:last-child){
+		margin-right: 1em;
+	}
+
+	#header-logo-wrap .header-link-box img{
+		height: 32px;	
+	}
+
+	#header-logo-wrap .header-link-box span{
+		font-size: 1em;
+	}
+
+}	
+
+
+@media screen and (max-width: 991px) {
+
+	#header-logo-wrap .header-logo-box img.logo{
+		height: 90%;
+		top: 4px;
+	}
+
+	#header-logo-wrap .header-link-box .header-input-search{
+		width: 26%;
+		font-size: .9em;
+		height: 28px;
+		line-height: 28px;
+		margin-right: .4em;
+	}
+
+	#header-logo-wrap .header-link-box .header-input-search > i , 
+	#header-logo-wrap .header-link-box .header-input-search > input{
+		height: 28px;
+		line-height: 28px;
+	}
+
+	#header-logo-wrap .header-link-box .header-input-search input{
+		padding: 0 1.6em 0 1em;
+	}
+
+	#header-logo-wrap .header-link-box a:not(:last-child){
+		margin-right: .4em;
+	}
+
+	#header-logo-wrap .header-link-box img{
+		height: 28px;
+	}
+	
+}	
+
+@media screen and (max-width: 839px) {
+
+	#header-logo-wrap .header-link-box{
+		padding-right: calc(6% + 4em);
+	}
+	
+}	
+
+@media screen and (max-width: 767px) {
+
+	header#header-logo-wrap{
+		/* 購物首頁 上方 header */
+		position: fixed;
+		opacity: .86;
+		margin: 0;
+		padding: 0 0 1em 0;
+		width: 100%;
+		bottom: 0;
+		background-color: #e40880;
+		z-index: 90;
+	}	
+
+
+	header#header-logo-wrap::before{
+		/* 屋頂 */
+		content: "";
+		position: absolute;
+		top: -20px;
+		right: 0;
+		left: 0;
+		margin: auto;
+		height:20px;
+		background-image:  
+			-webkit-linear-gradient(0deg , transparent 46px ,#e40880  46px ,#e40880 60% , transparent 60%) ,
+			-webkit-linear-gradient(180deg , transparent 46px ,#e40880  46px ,#e40880 60% , transparent 60%) ,
+			-webkit-linear-gradient(-68deg , transparent 50% ,#e40880 50% ) ,
+			-webkit-linear-gradient(-112deg , transparent 50% ,#e40880 50% ) ;
+		background-size: 
+			100% ,
+			100% ,
+			46px 20px ,
+			46px 20px ;
+		background-position: 
+			center ,
+			center ,
+			left ,
+			right ;
+		background-repeat: no-repeat;
+	}
+
+	header#header-logo-wrap::after{
+		/* 煙囪 */
+		content: "";
+		display: block;
+		position: absolute;
+		top: -32px;
+		right: 36px;
+		margin: auto;
+		width: 36px;
+		height: 36px;
+		z-index: -1;
+		background-color: #e40880;
+		border-radius: 6px;
+	}
+
+	#header-logo-wrap .header-logo-box{
+		left: 1em;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+	}
+
+	#header-logo-wrap .header-link-box{
+		padding: 0;
+	}
+
+	#header-logo-wrap .header-link-box img{
+		display: block;
+		margin-bottom: .2em;
+	}
+
+	#header-logo-wrap .header-link-box span{
+		display: block;
+		color: #fff;
+	}
+
+}	
+
+@media screen and (max-width: 667px) {
+
+	#header-logo-wrap .header-link-box span{
+		font-size: .9em;
+	}
+
+	#header-logo-wrap .header-link-box a:not(:last-child){
+		margin-right: 1em;
+	}
+
+}	
+
+@media screen and (max-width: 567px) {
+
+	header#header-logo-wrap{
+		padding-bottom: .6em;
+	}
+
+}	
+
+@media screen and (max-width: 479px) {
+
+	#header-logo-wrap .header-logo-box img.logo{
+		height: 90%;
+		width: auto;
+		bottom: 6px;
+		top: auto;
+	}
+
+}	
+
+@media screen and (max-width: 379px) {
+
+		#header-logo-wrap .header-logo-box img.logo{
+			height: 106%;
+			width: auto;
+			bottom: 6px;
+			top: auto;
+		}
+
+		#header-logo-wrap .header-link-box span{
+			display: none;
+		}
+
+}	
+
+
+/*-------- 以下 NAV 導覽列 屋頂設計 手機時置左側 --------*/
+
+
+#nav-link-wrap{
+	/* NAV 外框 */
+	margin: .4em auto;
+	position: relative;
+	padding: 0 1em;
+	max-width: 1600px;
+}
+
+#nav-link-wrap::before{
+	/* NAV 作屋頂 用兩層 BACK */
+	content: "";
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin: 0 auto;
+	display: block;
+	width:calc(100% - 2em);
+	height: 100%;
+	background-image:
+		url(../images/icon-header-house-left-001.png),
+		url(../images/icon-header-house-right-001.png);
+	background-position: 
+		left center ,
+		right center ;
+	/* 作兩層 BACK */
+	background-size:140px 100%;
+	/* 尺寸 先左右 再上下 */
+	background-repeat: no-repeat;
+}
+
+#nav-link-wrap::after{
+	/* NAV 作煙囪 */
+	content: "";
+	z-index: 2;
+	position: absolute;
+	right: 6%;
+	top: -1.2em;
+	background-color: #e40880;
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+}
+
+#nav-link-wrap ul.nav-link-box{
+	/* NAV 連結外框顏色 */
+	/* 使用 flex 控制內連結的寬度　*/
+	/*background-image:  -webkit-linear-gradient(0deg ,transparent 10% , #e40880 10% , #e40880 90% , transparent 90%);*/
+	background-color: #e40880;
+	color: #fff;
+	margin: 0 auto;	
+	padding: 2px 1em;
+	text-align: center;
+	/*border-radius: 10px;*/
+	width: calc(100% - 240px);
+	position: relative;
+	/* 抓定位 作屋頂 */
+	justify-content: space-between;
+}
+
+#nav-link-wrap ul.nav-link-box li {
+	/* NAV 連結 個別外框*/
+	/*display: inline-block;*/
+}
+
+#nav-link-wrap ul.nav-link-box h3 {
+	/* NAV 連結 標題樣式 */
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-size: 1em;
+}
+
+#nav-link-wrap ul.nav-link-box a {
+	/* NAV 連結 標題樣式 */
+	padding: 1em .2em;
+	font-size: 1.2em;
+	display: block;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+#nav-link-wrap ul.nav-link-box a:hover {
+	/* NAV 連結 標題樣式 */
+	background-color: #fff;
+	color: #e40880;
+	opacity: 1;
+}
+
+nav#nav-link-wrap > .black{
+	/* 手機版會出現的黑底 */
+	opacity: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	padding: 0;
+	background: #111;
+	z-index: -9;
+	visibility: hidden;
+	transition: .6s ease-in-out opacity ;
+
+}
+
+nav#nav-link-wrap.open > .black {
+	/* 手機版會出現的黑底 */
+	visibility: visible;
+	opacity: .46;
+}
+
+
+@media screen and (max-width: 1199px) {
+
+	#nav-link-wrap ul.nav-link-box {
+		padding-left: .2em;
+		padding-right: .2em;
+	}
+
+		#nav-link-wrap ul.nav-link-box li a{
+		font-size: 1em;
+		padding: 1.2em .2em;
+	}
+	
+}	
+
+@media screen and (max-width: 991px) {
+	
+	#nav-link-wrap ul.nav-link-box {
+		padding-left: .6em;
+		padding-right: .6em;
+	}
+
+	#nav-link-wrap ul.nav-link-box li a{
+		width: 3.2em;
+		padding: .4em 0;
+		/*font-size: 1rem;*/
+		letter-spacing: 2px;
+		line-height: 1.2;
+	}
+
+}
+
+@media screen and (max-width: 839px) {
+	
+	#nav-link-wrap::before{
+		background-size: 90px 100%;
+	}
+
+	#nav-link-wrap::after{
+		right: 7%;
+	}
+
+	#nav-link-wrap ul.nav-link-box{
+		width: calc(100% - 140px);
+	}
+	
+}	
+
+@media screen and (max-width: 767px) {
+	
+		nav#nav-link-wrap{
+			position: fixed;
+			top: 1em;
+			left: -8.8em;
+			/*bottom: 50%;*/
+			margin: auto;
+			z-index: 999;
+			transition: .5s ease left;
+		}				
+
+		nav#nav-link-wrap.open{
+			left: -2em;
+		}
+
+		nav#nav-link-wrap .row ,
+		nav#nav-link-wrap .container ,
+		nav#nav-link-wrap div[class*=col]{
+			margin: 0;
+			padding: 0;
+		}
+
+		nav#nav-link-wrap::before ,
+		nav#nav-link-wrap::after {
+			display: none;
+		}
+
+		#nav-link-wrap ul.nav-link-box {
+			z-index: 11;
+			flex-flow: column nowrap;
+			justify-content: flex-start;
+			align-items: stretch;
+			align-content: stretch;
+			text-align: right;
+			background-color: #fff;
+			padding: .8em .8em .8em 2em;
+			margin: 0;
+			width: 100%;
+			border-radius: 6px;
+			border: 2px solid #9b8579;
+		}
+
+		#nav-link-wrap ul.nav-link-box li a{
+			color: #9b8579;
+			line-height: 1;
+			padding: 0;
+			margin: 0 ;
+			display: block;
+			width: 100%;
+			letter-spacing: 1px;
+		}
+		#nav-link-wrap ul.nav-link-box li:not(:last-child) a{
+			margin-bottom: 1em;
+		}
+
+		#nav-link-wrap h2 {
+			cursor:pointer;
+			position: absolute;
+			right: -2.6em;
+			z-index: 10;
+			top: 0;
+			font-size: 1em;
+			width: 1em;
+			padding: .4em 1.4em .4em 2em;
+			text-align: center;
+			background-color: #e40880;
+			color: #fff;
+			border: 2px solid #fff;
+			border-radius: 6px;
+			transition: .3s ease right;
+		}
+
+		nav#nav-link-wrap.open h2{
+			right: -2em;
+		}
+	
+}		
+
+
+/*-------- 以下 分隔線 --------*/
+
+hr{
+	/* 內容 每一大區間 底線 */
+	clear: both;
+	display: block;
+	width: 100%;
+	height: 4px;
+	border-radius: 99em;
+	background-color: #e40880;
+	margin: .6em auto .6em;
+	border: none;
+}
+
+@media screen and (max-width: 991px) {
+
+	hr{
+		margin: .4em auto .4em;
+	}
+	
+}	
+
+@media screen and (max-width: 767px) {
+
+	hr{
+		display: none;
+	}
+
+}	
+
+
+/*-------- 以下 MAIN 內容區塊 共用樣式 外框與標題 --------*/
+
+
+main{
+	/* 內容 主區塊 */
+}
+
+main article{
+	/* 內容 每一大區間的外框 */
+}
+
+
+@media screen and (max-width: 767px) {
+
+	main article > .container ,
+	main article > .container > .row ,
+	main article > .container > .row > div[class*=col]{
+		/* 手機版 先消除掉原來的 格式 */
+		margin: 0;
+		padding: 0;
+	}
+
+}	
+
+main.with-aside aside {
+	/* 側邊欄 */
+	/* 商品分類頁 商品詳細頁 */
+	float: left;
+	width: 240px;
+}
+
+main.with-aside article{
+	/* 當有側邊欄時候的右側區塊 */
+	/* 商品分類頁 商品詳細頁 */
+	float: right;
+	width: calc(100% - 240px);
+	padding-left: 1.4em;
+}
+
+main.with-aside article::after{
+	/* 當有側邊欄時候的右側區塊 */
+	/* 作一個清除 */
+	/*content: "";*/
+	display: table;
+	/*clear: both;*/
+}
+
+@media screen and (max-width: 1199px) {
+
+	main.with-aside aside {
+		width: 200px;
+	}
+
+	main.with-aside article{
+		width: calc(100% - 200px);
+	}
+	
+}	
+
+@media screen and (max-width: 991px) {
+
+	main.with-aside aside {
+		width: 160px;
+	}
+
+	main.with-aside article{
+		padding-left: 1.2em;
+		width: calc(100% - 160px);
+	}
+	
+}	
+
+@media screen and (max-width: 767px) {
+
+	main.with-aside aside {
+		float: none;
+		width: 100%;
+	}
+
+	main.with-aside article{
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+	
+}	
+
+
+/*-------- 以下 PAGE 翻頁按鈕 樣式 --------*/
+
+
+.page-list-warp{
+	/* 翻頁區塊的的大外框 */
+	/* 製作上下邊距 */
+	/* 使用於商品分類列表 商品內頁 */
+	margin: 2em auto;
+}
+
+.show-now-content{
+	/* 翻頁區上方 秀出目前共有多少商品 */
+	font-size: .9em;
+	margin-bottom: 1.6em;
+	letter-spacing: 1px;
+}
+
+.show-now-content span{
+	/* 翻頁區上方 秀出目前共有多少商品 */
+	display: inline-block;
+	margin: 0 1em;
+}
+
+ul.page-list-box{
+	/* 翻頁按鈕 外框 */
+	/* 使用於商品分類列表 商品內頁 */
+	color: #e40880;
+	font-size: 1.2em;
+}
+
+ul.page-list-box > li{
+	/* 翻頁按鈕 每一頁 */
+	display: inline-block;
+}
+
+ul.page-list-box > li:not(:last-child){
+	/* 翻頁按鈕 每一頁 */
+	/* 製作右邊距 */
+	margin-right:1em;
+}
+
+ul.page-list-box > li.now-page{
+	/* 現在頁面 顏色 */
+	color:#9b8579;
+}
+
+ul.page-list-box > li a{
+	/* 翻頁按鈕 每一頁 連結按鈕 */
+	/* 繼承顏色 */
+	color: inherit;
+}
+
+ul.page-list-box > li a:hover{
+	/* 翻頁按鈕 每一頁 連結按鈕 */
+	/* 繼承顏色 */
+	color: #9b8579;	
+	opacity: .6;
+}
+
+@media screen and (max-width: 839px) {
+
+	.page-list-warp{
+		margin: 1em auto 2em;
+	}
+	
+	ul.page-list-box{
+		font-size: 1em;
+	}
+	
+	ul.page-list-box > li:not(:last-child){
+		margin-right: .6em;
+	}
+
+	.show-now-content span{
+		margin: 0 .6em;	
+	}
+
+}	
+
+@media screen and (max-width: 767px) {
+
+	ul.page-list-box{
+		font-size: .9em;
+	}
+
+	ul.page-list-box > li:not(:last-child){
+		margin-right: .4em;
+	}
+
+	.show-now-content{
+		font-size: .8em;
+	}
+
+	.show-now-content span{
+		margin: 0 .2em;
+	}
+
+}	
+
+
+/*-------- 以上 全站共用樣式結束 --------*/
+
+
+/*-------- 以下開始 購物首頁 專用內容 --------*/
+
+
+/*-------- 以下 MAIN 內容區塊 共用樣式 外框與標題 --------*/
+
+
+main article .header-title-wrap{
+	/* 內容區塊 標題的外框 */
+	height: 50px;
+	position: relative;
+	margin-top: 42px;
+	border-radius: 10px;
+	margin-bottom: .4em;
+}
+
+main article .header-title-wrap::before{
+	/* 內容區塊 標頁列 白線 */
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	height: 4px;
+	width: 100%;
+	background-color: #fff;
+}
+
+main article .header-title-wrap::after{
+	/* 內容區塊 標頁列 白屋頂 */
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 4;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	background-image:
+		-webkit-linear-gradient(-60deg , #fff 32px , transparent 32px) ,
+		-webkit-linear-gradient(-120deg , #fff 32px , transparent 32px) ,
+		-webkit-linear-gradient(0deg , #fff 0px , #fff 4px ,transparent 4px , transparent 50px ) ,
+		-webkit-linear-gradient(0deg , #fff 0px , #fff 4px ,transparent 4px , transparent 50px ) ;
+	background-size: 
+		100px 40px ,
+		100px 40px ,
+		50px 50% ,
+		50px 50% ;
+	background-position: 
+		left top ,
+		right top ,
+		center top ,
+		calc(50% + 25px) bottom ;
+	background-repeat: 
+		no-repeat ,
+		no-repeat ,
+		repeat-x ,
+		repeat-x ;
+}
+
+main article .header-title-wrap h3 + img{
+	/* 內容區塊 標題 前的圖標 icon */
+	position: absolute;
+	top: -42px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	display: block;
+	height: 36px;
+}
+
+main article .header-title-wrap h3{
+	/* 內容區塊 標題的文字 */
+	font-size: 1.4em;
+	display: inline-block;
+	background-color: #e30080;
+	letter-spacing: 1px;
+	line-height: 50px;
+	height: 50px;
+	margin: 0 auto;	
+	padding: 0 2.6em;
+	position: relative;
+	z-index: 5;
+	/* 些微微調 對齊 磚牆 */
+	left: 2px;
+	/*width: 210px;*/
+	background-image:  
+		-webkit-linear-gradient(0deg , #fff 4px , transparent 4px) ,
+		-webkit-linear-gradient(180deg , #fff 4px , transparent 4px);
+	background-size: 
+		100% 27px;
+	background-position: 
+		left bottom , 
+		right bottom ;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 991px) {
+
+	main article .header-title-wrap::after{
+		/* 內容區塊 標頁列 白屋頂 */
+		background-image:
+			-webkit-linear-gradient(-62deg , #fff 24px , transparent 24px) ,
+			-webkit-linear-gradient(-118deg , #fff 24px , transparent 24px) ,
+			-webkit-linear-gradient(0deg , #fff 0px , #fff 4px ,transparent 4px , transparent 50px ) ,
+			-webkit-linear-gradient(0deg , #fff 0px , #fff 4px ,transparent 4px , transparent 50px ) ;
+		background-size: 
+			90px 28px ,
+			90px 28px ,
+			50px 50% ,
+			50px 50% ;
+	}
+
+	main article .header-title-wrap{
+		/* 內容區塊 標題的外框 */
+		height: 40px;
+		margin-top: 34px;
+	}
+
+	main article .header-title-wrap h3 + img{
+		/* 內容區塊 標題 前的圖標 icon */
+		height: 28px;
+		top: -34px;
+	}
+
+	main article .header-title-wrap h3{
+		/* 內容區塊 標題的文字 */
+		font-size: 1.2em;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 3.2em;
+		background-size: 100% 22px;
+	}
+	
+}	
+
+@media screen and (max-width: 839px) {
+
+	main article .header-title-wrap::after{
+		/* 內容區塊 標頁列 白屋頂 */
+		background-image:
+			-webkit-linear-gradient(-64deg , #fff 20px , transparent 20px) ,
+			-webkit-linear-gradient(-116deg , #fff 20px , transparent 20px) ,
+			-webkit-linear-gradient(0deg , #fff 0px , #fff 4px ,transparent 4px , transparent 50px ) ,
+			-webkit-linear-gradient(0deg , #fff 0px , #fff 4px ,transparent 4px , transparent 50px ) ;
+		background-size: 
+			80px 26px ,
+			80px 26px ,
+			50px 50% ,
+			50px 50% ;
+	}
+
+	main article .header-title-wrap{
+		/* 內容區塊 標題的外框 */
+		height: 36px;
+		margin-top: 30px;
+	}
+
+	main article .header-title-wrap h3 + img{
+		/* 內容區塊 標題 前的圖標 icon */
+		height: 26px;
+		top: -30px;
+	}
+
+	main article .header-title-wrap h3{
+		/* 內容區塊 標題的文字 */
+		font-size: 1em;
+		height: 36px;
+		line-height: 36px;
+		padding: 0 2em;
+		background-size: 100% 20px;
+	}
+	
+}	
+
+@media screen and (max-width: 767px) {
+
+	main article .header-title-wrap{
+		/* 內容區塊 標題的外框 作成專牆*/
+		margin: 0 auto;
+		height: 20px;
+		border: 2px solid #fff;
+		border-radius: 0;
+		background-image:
+			-webkit-linear-gradient(0deg , #fff 0px, #fff 4px, transparent 4px );
+		background-size: 2.6em 100%;
+		background-position: center;
+		background-repeat: repeat-x;
+	}
+	
+	main article .header-title-wrap::before ,
+	main article .header-title-wrap::after {
+		display: none;
+	}
+
+	main article .header-title-wrap h3{
+		/* 內容區塊 標題的文字 */
+		position: absolute;
+		left: 0;
+		top: 20px;
+		border-radius: 6px;
+		padding: 0 1.6em 0 3.8em;
+		background-image: none;
+		z-index: 6;
+		background-color: rgba(228,8,128,.8);
+	}
+
+	main article .header-title-wrap img.visible-xs-inline-block{
+		/* 內容區塊 標題的小圖示 icon */
+		height: 1em;
+		position: absolute;
+		left:1em;
+		top: 30px;
+		z-index: 7;
+	}
+	
+
+}	
+
+
+/*-------- 以下 MAIN 內容區塊 主視覺輪播 KV BANNER --------*/
+
+
+#kv-banner{
+	/* KV 外框 */
+	position: relative;
+}
+
+#kv-banner .kv-slider-nav-box{
+	/* KV 左側 小圖導覽框 */
+	float: left;
+	width: 10%;
+}
+
+#kv-banner .kv-slider-nav-box > #kv-slider-nav{
+	/* KV 左側 小圖導覽框 僅給 JQ 用名稱 不代樣式 */
+}
+
+#kv-banner .kv-slider-nav-box .slick-track{
+	/* KV 左側 清除掉 slider 的全寬 */
+	width: 100% !important;
+}
+
+#kv-banner .kv-slider-nav-box .product-item{
+	/* KV 左側 小圖 內框 */
+	/* 清除掉 slider 的 float */
+	float: none;
+}
+
+#kv-banner .kv-slider-nav-box .product-item{
+	/* KV 左側 小圖 內框 */
+	padding-bottom:calc(100% - 4px);
+	position: relative;
+}
+
+#kv-banner .kv-slider-nav-box .product-item:not(:last-child){
+	/* KV 左側 小圖 內框 */
+	margin-bottom: 6px;
+}
+
+#kv-banner .kv-slider-nav-box .product-item img{
+	/* KV 左側 小圖 */
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	display: block;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+#kv-banner .kv-slider-main-box{
+	/* KV 右側 大圖輪播處 外框 */
+	float: left;
+	width: calc(90% - 6px);
+	margin-left: 6px;
+	cursor: pointer;
+}
+
+#kv-banner .kv-slider-main-box > #kv-slider-main{ 
+	/* KV 右側 大圖輪播處 外框 僅給 JQ 用名稱 不帶樣式 */
+}
+
+#kv-banner .kv-slider-main-box a , 
+#kv-banner .kv-slider-main-box a > img{ 
+	/* KV 右側 大圖輪播處 連結與圖片 作成 BLOCK */
+	display: block;
+}
+
+#kv-banner .kv-slider-main-box a:hover , 
+#kv-banner .kv-slider-main-box a:hover > img{ 
+	/* KV 右側 大圖輪播處 連結與圖片 取消透明 */
+	opacity: 1;
+}
+
+
+
+@media screen and (max-width: 839px) {
+
+	#kv-banner .kv-slider-main-box{
+		width: calc(90% - 4px);
+		margin-left: 4px;
+	}
+
+	#kv-banner .kv-slider-nav-box .product-item:not(:last-child){
+		margin-bottom: 4px;
+	}
+	
+}	
+
+@media screen and (max-width: 767px) {
+
+	#kv-banner .kv-slider-nav-box{
+		/* KV BANNER 左側隱藏 */
+		display: none;
+	}
+
+	#kv-banner .kv-slider-main-box{
+		/* 右側大 BANNER */
+		width: 100%;
+		float: none;
+		margin: 0 auto;	
+		border-radius: none;
+		border: none;
+	}
+
+}	
+
+
+/*-------- 以下 MAIN 內容區塊 共用樣式 FLEX 隔線 --------*/
+
+
+main#shopping-index article .flex-box > .feature-box{ 
+	/* 購物首頁 內容區塊 flex box 下的第一層 */
+	/* 左方較大格 */
+	width: 36%;
+}
+
+main#shopping-index article .flex-box > .product-box{ 
+	/* 購物首頁 內容區塊 flex box 下的第一層 */
+	/* 右方 小格子們的 */
+	width: 64%;
+	padding-left: 8px;
+}
+
+@media screen and (max-width: 839px) {
+
+	main#shopping-index article .flex-box > .product-box{
+		padding-left: 4px;
+	}
+	
+}	
+
+@media screen and (max-width: 767px) {
+
+	main#shopping-index article .flex-box > .feature-box{ 
+		/* 購物首頁 內容區塊 flex box 下的第一層 */
+		/* 左方較大格 */
+		width: 100%;
+		padding-bottom: 28%;
+		border-radius: 0;
+	}
+
+	main#shopping-index article .flex-box > .product-box{
+		width: 100%;
+		padding-left: 0;	
+	}
+
+}	
+
+@media screen and (max-width: 667px) {
+
+	main#shopping-index article .flex-box > .feature-box{
+		padding-bottom: 32%;
+	}
+
+}	
+
+@media screen and (max-width: 567px) {
+
+	main#shopping-index article .flex-box > .feature-box{
+		padding-bottom: 60%;
+	}
+
+}	
+
+
+/*-------- 以下 MAIN 內容區塊 共用樣式 --------*/
+/*-------- 左方大注目格的共用樣式 --------*/
+
+
+article .flex-box > .feature-box .sub-title:not(.style-deep){
+	/* 本期企畫 current-plan */
+	/* 限時搶購 limited-buying */
+	/* 熱銷推薦 hot-recommend */
+	/* 三區共用 左側 大格框 內的 sub title */
+	/* 使用 not 選取器排除掉 明星商品 與 影片專欄 的第二 style 樣式 */
+	bottom: 4px;
+	top: inherit;
+	font-size: 2em;
+}
+
+article .flex-box > .feature-box .btn.pos-a{
+	/* 三區共用 左側 大格框 內的 進入瞧瞧 按鈕 */
+	bottom: 40%;
+	opacity: 0;
+}
+
+article .flex-box > .feature-box:hover .btn.pos-a{
+	/* 三區共用 左側 大格框 內的 進入瞧瞧 按鈕 */
+	bottom: 44%;
+	opacity: 1;
+}
+
+@media screen and (max-width: 1199px) {
+
+	article .flex-box > .feature-box .sub-title:not(.style-deep){
+		font-size: 1.4em;
+	}
+	
+}	
+
+@media screen and (max-width: 991px) {
+
+	article .flex-box > .feature-box .sub-title:not(.style-deep){
+		font-size: 1.2em;
+	}
+	
+}	
+
+@media screen and (max-width: 767px) {
+
+	article .flex-box > .feature-box .btn.pos-a{
+		/* 三區共用 左側 大格框 內的 進入瞧瞧 按鈕 */
+		display: none;
+	}
+
+}	
+
+
+/*-------- 右方 列表商品列 樣式 --------*/
+/*-------- 限時搶購 與熱銷推薦 右方共用 --------*/
+
+
+article .flex-box > .product-box ul.product-list-box li .product-item{
+	/* 商品格 */
+}
+
+article .flex-box > .product-box ul.product-list-box li .product-item .product-name{
+	/* 商品格 商品名稱 作下邊距 */
+	position: absolute;
+	width: 46%;
+	z-index: 2;
+	margin-bottom: 3em;
+	text-shadow: 0 0 4px #fff;
+	top: 1.6rem;
+}
+
+article#limited-buying .flex-box > .product-box ul.product-list-box li .product-item .product-name{
+	/* 限時搶購 商品格 商品名稱 作下邊距 */
+	left: 1rem;
+}
+
+article#hot-recommend .flex-box > .product-box ul.product-list-box li .product-item .product-name{
+	/* 熱銷推薦 商品格 商品名稱 作下邊距 */
+	right: 1rem;
+}
+
+article .flex-box > .product-box ul.product-list-box li .product-item .product-name + .product-price{
+	/* 商品格 商品價錢 */
+	position: absolute;
+	bottom: 1.6rem;
+	font-size: 1.8em;
+	text-shadow: 0 0 4px #fff;
+}
+
+article#limited-buying .flex-box > .product-box ul.product-list-box li .product-item .product-name + .product-price{
+	/* 限時搶購 商品格 商品價錢 */
+	left: 1rem;
+}
+
+article#hot-recommend .flex-box > .product-box ul.product-list-box li .product-item .product-name + .product-price{
+	/* 熱銷推薦 商品格 商品價錢 */
+	right: 1rem;
+}
+
+article#limited-buying .flex-box > .product-box ul.product-list-box li .product-item .btn{
+	/* 限時搶購 商品格 按鈕 */
+	right: -3px;
+	left: auto;
+	bottom: -3px;
+}
+
+article#hot-recommend .flex-box > .product-box ul.product-list-box li .product-item .btn{
+	/* 熱銷推薦 商品格 按鈕 */
+	left: .4em;
+	right: auto;
+	top: .4em;
+}
+
+article#limited-buying .flex-box > .product-box ul.product-list-box li .product-item a img {
+	/* 限時搶購 商品格 圖片 */
+	/* 熱銷推薦 商品格 圖片 */
+	width: 60%;
+	max-width: 200px;
+	margin: 0 0 0 auto;
+}
+
+article#hot-recommend .flex-box > .product-box ul.product-list-box li .product-item a img{
+	/* 限時搶購 商品格 圖片 */
+	/* 熱銷推薦 商品格 圖片 */
+	width: 60%;
+	max-width: 200px;
+	margin: 0 auto 0 0 ;
+}
+
+@media screen and (max-width: 1199px) {
+
+
+	article#limited-buying .flex-box > .product-box ul.product-list-box li .product-item .product-name{
+		left: .4em;
+		top: 1em;
+		width: 80%;
+	}	
+
+	article#hot-recommend .flex-box > .product-box ul.product-list-box li .product-item .product-name{
+		right: .4em;
+		top: 1em;
+		width: 66%;
+	}	
+
+	article#limited-buying .flex-box > .product-box ul.product-list-box li .product-item .product-name + .product-price {
+		left: .4em;
+		bottom: .4em;
+		font-size: 1.4em;
+	}
+
+	article#hot-recommend .flex-box > .product-box ul.product-list-box li .product-item .product-name + .product-price{
+		right: .4em;
+		bottom: .4em;
+		font-size: 1.4em;
+	}
+
+	article#hot-recommend .flex-box > .product-box ul.product-list-box li .product-item .btn{
+		left: 2px;
+		top: 2px;
+	}
+	
+}	
+
+@media screen and (max-width: 767px) {
+
+	article#limited-buying .flex-box > .product-box ul.product-list-box li .product-item .product-name ,
+	article#hot-recommend .flex-box > .product-box ul.product-list-box li .product-item .product-name {
+		width: 60%;
+		position: absolute;
+		top: 0;
+		bottom: 2em;
+		margin: auto;
+	}
+
+	article .flex-box > .feature-box .sub-title.count-down-box:not(.style-deep){
+		/* 黑底字 倒數專用框 */
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		height: 3em;
+		display: inline-block;
+		width: 10em;
+	}	
+
+	article .flex-box > .feature-box .sub-title.count-down-box:not(.style-deep) > span{
+		/* 黑底字 倒數專用框 */
+		display: block;
+	}
+
+	article#limited-buying .flex-box > .product-box ul.product-list-box li .product-item a img {
+		/* 限時搶購 商品格 圖片 */
+		/* 熱銷推薦 商品格 圖片 */
+		width: 60%;
+	}
+
+	article#hot-recommend .flex-box > .product-box ul.product-list-box li .product-item a img{
+		/* 限時搶購 商品格 圖片 */
+		/* 熱銷推薦 商品格 圖片 */
+		width: 60%;
+		margin: 0 auto 0 0 ;
+	}
+
+}	
+
+@media screen and (max-width: 667px) {
+
+	article#hot-recommend .flex-box > .product-box ul.product-list-box li .product-item .product-name + .product-price{
+		text-align: right;
+	}
+
+	article#hot-recommend .flex-box > .product-box ul.product-list-box li .product-item .product-name + .product-price ,
+	article#limited-buying .flex-box > .product-box ul.product-list-box li .product-item .product-name + .product-price{
+		top: 1em;
+		bottom: 0;
+		margin: auto;
+		height: 1em;
+	}
+
+}	
+
+@media screen and (max-width: 567px) {
+
+	article#hot-recommend .flex-box > .product-box ul.product-list-box li .product-item .product-name + .product-price ,
+	article#limited-buying .flex-box > .product-box ul.product-list-box li .product-item .product-name + .product-price{
+		top: auto;
+		bottom: .4em;
+		margin: auto;
+		height: 1em;
+	}
+
+
+}	
+
+/*-------- 以下 MAIN 內容區塊 本期企畫 CURRENT PLAN --------*/
+
+
+article#current-plan {
+	/* 本期企畫 大外框 */
+}
+
+#current-plan #current-plan-slider{
+	/* 本期企畫 右側六小格外框 JQ 名稱 不帶樣式 */
+	/* 手機版才會啟動 JQ */
+	/* 同 div 帶 flex box */
+}
+
+#current-plan #current-plan-slider .current-plan-product-item{
+	/* 本期企畫 右側六小格 */
+	width:calc(33.3333% - 4px);
+	margin-right: 4px;
+	flex:0 1 auto;
+}
+
+#current-plan #current-plan-slider .current-plan-product-item:nth-child(1),
+#current-plan #current-plan-slider .current-plan-product-item:nth-child(2),
+#current-plan #current-plan-slider .current-plan-product-item:nth-child(3){
+	/* 本期企畫 右側六小格 */
+	margin-bottom: 4px;
+}
+
+#current-plan #current-plan-slider .current-plan-product-item:nth-child(4),
+#current-plan #current-plan-slider .current-plan-product-item:nth-child(5),
+#current-plan #current-plan-slider .current-plan-product-item:nth-child(6){
+	/* 本期企畫 右側六小格 */
+	margin-top: 4px;
+}
+
+#current-plan #current-plan-slider .current-plan-product-item > .product-item{
+	/* 本期企畫 右側六小格 內框 帶邊框樣式 */
+	padding-bottom: 64%;
+}
+
+#current-plan #current-plan-slider .current-plan-product-item > .product-item .btn{
+	/* 本期企畫 右側六小格 進入瞧瞧 按鈕 */
+	opacity: 0;
+	bottom: 0;
+}
+
+#current-plan #current-plan-slider .current-plan-product-item > .product-item:hover .btn{
+	/* 本期企畫 右側六小格 進入瞧瞧 按鈕 */
+	opacity: 1;
+	bottom: 1em;
+}
+
+@media screen and (max-width: 839px) {
+
+	#current-plan #current-plan-slider .current-plan-product-item:nth-child(1),
+	#current-plan #current-plan-slider .current-plan-product-item:nth-child(2),
+	#current-plan #current-plan-slider .current-plan-product-item:nth-child(3){
+		/* 本期企畫 右側六小格 */
+		margin-bottom: 2px;
+	}
+
+	#current-plan #current-plan-slider .current-plan-product-item:nth-child(4),
+	#current-plan #current-plan-slider .current-plan-product-item:nth-child(5),
+	#current-plan #current-plan-slider .current-plan-product-item:nth-child(6){
+		/* 本期企畫 右側六小格 */
+		margin-top: 2px;
+	}
+
+	
+}	
+
+@media screen and (max-width: 767px) {
+
+	#current-plan #current-plan-slider .current-plan-product-item:nth-child(1),
+	#current-plan #current-plan-slider .current-plan-product-item:nth-child(2),
+	#current-plan #current-plan-slider .current-plan-product-item:nth-child(3),
+	#current-plan #current-plan-slider .current-plan-product-item:nth-child(4),
+	#current-plan #current-plan-slider .current-plan-product-item:nth-child(5),
+	#current-plan #current-plan-slider .current-plan-product-item:nth-child(6){
+		/* 本期企畫 右側六小格 */
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+}	
+
+
+/*-------- 以下 MAIN 內容區塊 明星商品 star-product --------*/
+/*-------- 以下 MAIN 內容區塊 影片專題 video-feature --------*/
+/*-------- 部分樣式兩架構通用  --------*/
+
+
+article#star-commodity {
+	/* 明星商品 大外框 */
+}
+
+article#video-subject {
+	/* 影片專題 大外框 */
+}
+
+article .flex-box.for-slider {
+	/* 明星商品 影片專題 兩架構 flex-box 加上一個樣式控制內元素 */
+}
+
+article .flex-box.for-slider > .feature-box.product-item span.product-name {
+	/* 明星商品 影片專題 左側 主打商品 名稱與價錢 */
+	width: 36%;
+	margin-left: auto;
+	margin-right: 0;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	text-align: left;
+}
+
+article .flex-box.for-slider > .feature-box.product-item span.product-price {
+	/* 明星商品 影片專題 左側 主打商品 名稱與價錢 */
+	width: 36%;
+	font-size: 2em;
+	margin-left: auto;
+	text-align: left;
+}
+
+article .flex-box.for-slider > .feature-box.product-item img {
+	/* 明星商品 影片專題 左側 主打商品 商品圖 */
+	position: absolute;
+	left: 1.6em;
+	top: 1.6em;
+	width: 56%;
+}
+
+article .flex-box.for-slider > .feature-box.product-item .btn {
+	/* 明星商品 影片專題 左側 主打商品 購物按鈕 */
+	bottom: 2.2em;
+	opacity: 1;
+}
+
+article#star-commodity #star-commodity-slider{
+	/* 明星商品 右側 商品格 外框 JQ 樣式名稱 不帶樣式 */
+}
+
+article#video-subject #video-subject-slider{
+	/* 影片專題 右側 商品格 外框 JQ 樣式名稱 不帶樣式 */
+}
+
+article .flex-box.for-slider > .product-box > ul li{
+	/* 明星商品 影片專用 共用右側 商品格 每一格 */
+	padding-right: 8px;
+}
+
+article .flex-box.for-slider > .product-box .product-item{	
+	/* 明星商品 影片專用 共用右側 商品格 每一格 下內縮加大 為了放黑底的 subtitle */
+	padding-bottom: 3em;
+}
+
+article .flex-box.for-slider .sub-title > span.number{
+	/* 明星商品 右側+左側 商品格 每一格 黑底的 subtitle no. */
+	display: inline-block;
+	margin-right:2px;
+}
+
+article#video-subject #video-box{
+	/* 影片的外層 控制大小 */
+}
+
+article#video-subject .video-block + .bg-image-cover{
+	visibility: hidden;
+}
+
+@media screen and (max-width: 1199px) {
+
+	article .flex-box.for-slider > .feature-box.product-item img {
+		/* 明星商品 影片專題 左側 主打商品 商品圖 */
+		top: auto;
+		bottom: auto;
+	}
+
+	article .flex-box.for-slider > .feature-box.product-item .btn {
+	/* 明星商品 影片專題 左側 主打商品 購物按鈕 */
+		bottom: 3em;
+	}	
+
+}	
+
+@media screen and (max-width: 991px) {
+
+	article .flex-box.for-slider > .product-box .product-item{
+		padding-bottom: 2.6em;
+	}
+
+	article .flex-box.for-slider > .feature-box.product-item img{
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 70%;
+		margin: auto;
+	}
+
+	article .flex-box.for-slider > .feature-box.product-item span.product-name ,
+	article .flex-box.for-slider > .feature-box.product-item span.product-price{
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;	
+	}
+
+	article .flex-box.for-slider > .feature-box.product-item .btn{
+		bottom: 2.6em;
+	}
+	
+}	
+
+@media screen and (max-width: 839px) {
+
+	article .flex-box.for-slider > .product-box > ul li{
+		padding-right: 4px;
+	}
+	
+}	
+
+@media screen and (max-width: 767px) {
+
+	article#star-commodity .flex-box.for-slider > .feature-box.product-item{
+		/* 明星商品 影片專題 左側 主打商品 外框 */
+		padding: 4em 1em 4em 30%;
+	}	
+
+	article .flex-box.for-slider > .feature-box.product-item span.product-name ,
+	article .flex-box.for-slider > .feature-box.product-item span.product-price {
+		/* 明星商品 影片專題 左側 主打商品 價錢名稱 */
+		width: 100%;
+		text-align: center;
+	}
+
+	article#star-commodity .flex-box.for-slider > .feature-box.product-item .btn {
+		/* 明星商品 影片專題 左側 主打商品 按鈕 */
+		display: block;
+		position: relative;
+		bottom: 0;
+		margin-top: 1em;
+	}
+
+	article#star-commodity .flex-box.for-slider > .feature-box.product-item img {
+		/* 明星商品 影片專題 左側 主打商品 商品圖 */
+		height: calc(100% - 2em);
+		width: auto;
+		position: absolute;
+		top: 0;
+		right: auto;
+		bottom: 0;
+		left: 2em;
+		margin: auto;
+	}
+
+	article .flex-box.for-slider > .product-box > ul li {
+		/* 明星商品 影片專用 共用右側 商品格 */
+		text-align: center;
+	}
+
+	article .flex-box.for-slider > .product-box > ul li > .product-item.padding{
+		/* 明星商品 影片專用 共用右側 商品格 */
+		padding: 2em .4em 2em 46% ;
+	}
+	article#video-subject .flex-box.for-slider > .product-box > ul li > .product-item.padding{
+		/* 明星商品 影片專用 共用右側 商品格 */
+		padding-top: 4em;
+	}
+
+	article .flex-box.for-slider > .product-box > ul li img{
+		/* 明星商品 影片專用 共用右側 商品格 圖片 */
+		height: calc(100% - 2em);
+		width: auto;
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		left: 1em;
+		top: 0;
+		bottom: 0;
+		margin:  auto;	
+		z-index: -1;
+	}
+	article#video-subject .flex-box.for-slider > .product-box > ul li img{
+		/* 明星商品 影片專用 共用右側 商品格 圖片 */
+		height: calc(100% - 3.6em);
+		top: 2em;
+	}
+
+	article#star-commodity .flex-box.for-slider > .feature-box .sub-title.style-deep{
+		font-size: 1.4em;
+	}
+
+	article#video-subject .flex-box.for-slider > .product-box .sub-title.style-deep{
+		top: 0;
+		bottom: auto;
+	}
+
+	article#star-commodity .flex-box.for-slider > .feature-box .sub-title.style-deep::before{
+		content: "";
+		width: 10em;
+		height: 10em;
+		background-image:  -webkit-linear-gradient(135deg ,#111 3.2em ,transparent 3.2em);
+	}	
+
+	article#video-subject #video-box{
+		/* 影片的外層 控制大小 */
+		padding-bottom: 50%;
+	}
+
+}	
+
+@media screen and (max-width: 667px) {
+
+	article .flex-box.for-slider > .product-box > ul li img{
+		width: 60%;
+		height: auto;
+		left: auto;
+		right: .6em;
+	}
+
+	article .flex-box.for-slider > .product-box > ul li > .product-item.padding{
+		padding: 2em 1em;
+	}
+
+}	
+
+@media screen and (max-width: 567px) {
+
+	article .flex-box.for-slider > .product-box > ul li > .product-item.padding{
+		padding: .6em;
+	}	
+
+	article#video-subject .flex-box.for-slider > .product-box > ul li > .product-item.padding{
+		padding-top: 3em;
+	}
+
+	article .flex-box.for-slider > .product-box > ul li > .product-item.padding .product-name {
+		width: 70%;
+		margin: 0 0 1em 0;
+		text-align: left;
+	}
+
+	article .flex-box.for-slider > .product-box > ul li > .product-item.padding .product-price{
+		width: 70%;
+		font-size: 1.4em;
+		margin: 0 0 .4em 0;
+		text-align: left;
+	}
+
+	article#video-subject .flex-box.for-slider > .product-box > ul li img{
+		width: 60%;
+		height: auto;
+	}
+
+}	
+
+/*-------- 以下 MAIN 內容區塊 限時搶購 limited-buying --------*/
+/*-------- 以下 MAIN 內容區塊 熱銷推薦 hot-recommend --------*/
+
+/*-------- 兩架構通用 --------*/
+
+
+article#limited-buying {
+	/* 限時搶購 大外框 */
+}
+
+article#hot-recommend {
+	/* 熱銷推薦 大外框 */
+}
+
+article#hot-recommend ul.limited-buying-product-box ,
+article#limited-buying ul.limited-buying-product-box {
+	/* 限時搶購 , 熱銷推薦 - 右側 六小格商品外框 */
+	/* 帶 FLEX 樣式 */
+	/* 帶 list unstyle 清除掉樣式*/
+}
+
+article#hot-recommend ul.product-list-box > li ,
+article#limited-buying ul.product-list-box > li{
+	/* 限時搶購 , 熱銷推薦 - 右側 六小格商品 每一格 */
+	width: calc(33.333% - 4px);
+}
+
+article#hot-recommend ul.product-list-box > li:nth-child(1) ,
+article#hot-recommend ul.product-list-box > li:nth-child(2) ,
+article#hot-recommend ul.product-list-box > li:nth-child(3) ,
+article#limited-buying ul.product-list-box > li:nth-child(1) ,
+article#limited-buying ul.product-list-box > li:nth-child(2) ,
+article#limited-buying ul.product-list-box > li:nth-child(3) {
+	/* 限時搶購 , 熱銷推薦 - 右側 六小格商品 每一格 */
+	margin-bottom: 4px;
+}
+
+article#hot-recommend ul.product-list-box > li:nth-child(4) ,
+article#hot-recommend ul.product-list-box > li:nth-child(5) ,
+article#hot-recommend ul.product-list-box > li:nth-child(6) ,
+article#limited-buying ul.product-list-box > li:nth-child(4) ,
+article#limited-buying ul.product-list-box > li:nth-child(5) ,
+article#limited-buying ul.product-list-box > li:nth-child(6) {
+	/* 限時搶購 , 熱銷推薦 - 右側 六小格商品 每一格 */
+	margin-top: 4px;
+}
+
+@media screen and (max-width: 991px) {
+
+}	
+
+@media screen and (max-width: 839px) {
+
+	article#hot-recommend ul.product-list-box > li:nth-child(1) ,
+	article#hot-recommend ul.product-list-box > li:nth-child(2) ,
+	article#hot-recommend ul.product-list-box > li:nth-child(3) ,
+	article#limited-buying ul.product-list-box > li:nth-child(1) ,
+	article#limited-buying ul.product-list-box > li:nth-child(2) ,
+	article#limited-buying ul.product-list-box > li:nth-child(3) {
+		/* 限時搶購 , 熱銷推薦 - 右側 六小格商品 每一格 */
+		margin-bottom: 2px;
+	}
+
+	article#hot-recommend ul.product-list-box > li:nth-child(4) ,
+	article#hot-recommend ul.product-list-box > li:nth-child(5) ,
+	article#hot-recommend ul.product-list-box > li:nth-child(6) ,
+	article#limited-buying ul.product-list-box > li:nth-child(4) ,
+	article#limited-buying ul.product-list-box > li:nth-child(5) ,
+	article#limited-buying ul.product-list-box > li:nth-child(6) {
+		/* 限時搶購 , 熱銷推薦 - 右側 六小格商品 每一格 */
+		margin-top: 2px;
+	}
+	
+}	
+
+@media screen and (max-width: 667px) {
+
+	article#hot-recommend ul.product-list-box > li ,
+	article#limited-buying ul.product-list-box > li{
+		/* 限時搶購 , 熱銷推薦 - 右側 六小格商品 每一格 */
+		width: 50%;
+	}
+
+}	
+
+
+/*-------- 以上 購物首頁 結束 --------*/
+
+
+/*-------- 以下 商品分類頁、商品詳細頁 共用樣式 開始 --------*/
+
+/*-------- 以下 商品分類頁、商品詳細頁 ASIDE MENU 側邊選單 --------*/
+
+
+aside section#aside-nav{
+	/* 左側欄 分類選單 */
+	color: #e40880;
+	font-size:1.2em;
+	margin-bottom: 1em;
+}
+
+aside section#aside-nav a{
+	/* 左側欄 分類選單 連結顏色*/
+	color: #9c8579;
+}
+
+aside section#aside-nav a:hover{
+	/* 左側欄 分類選單 連結顏色*/
+	color: #e40880;
+}
+
+aside section#aside-nav .aside-nav-title{
+	/* 左側欄 分類選單 標題外 */
+	background-color: #e40880;
+	color: #fff;
+	padding: .4em 1.2em;
+}
+
+aside section#aside-nav ul.aside-menu-box{
+	/* 左側欄 分類選單 第一層 外框 */
+	padding: 0 1.2em;
+}
+
+aside section#aside-nav ul.aside-menu-box > li{
+	/* 左側欄 分類選單 第一層 */
+	padding: .5em 0;
+}
+
+aside section#aside-nav ul.aside-menu-box > li:not(:last-child){
+	/* 左側欄 分類選單 第一層 選單作下底線  */
+	border-bottom: 1px solid #a0a0a0;
+}
+
+aside section#aside-nav ul.aside-menu-box > li > h5{
+	/* 左側欄 分類選單 第一層 標題按鈕 */
+	cursor: pointer;
+	position: relative;
+	font-weight: normal;
+	transition: .3s linear color;
+}
+
+aside section#aside-nav ul.aside-menu-box > li > h5:hover{
+	/* 左側欄 分類選單 第一層 標題按鈕 */
+	color: #716558;
+}
+
+aside section#aside-nav ul.aside-menu-box > li.open > h5{
+	/* 左側欄 分類選單 第一層 標題按鈕 */
+	/* 當選單打開 加上一個 class */
+	font-weight: bold;
+}
+
+aside section#aside-nav ul.aside-menu-box > li > h5::before{
+	/* 左側欄 分類選單 第一層 標題按鈕 */
+	content: "";
+	position: absolute;
+	display: block;
+	width: 6px;
+	height: 100%;
+	left: -.6em;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: #e40880;
+}
+
+aside section#aside-nav ul.aside-menu-box > li > h5 + ul.aside-menu-block{
+	/* 左側欄 分類選單 第二層 選單 */
+	margin: .6em 0 0 0;
+}
+
+aside section#aside-nav ul.aside-menu-box > li:not(:first-child) > h5 + ul.aside-menu-block{
+	/* 左側欄 分類選單 第二層 選單 */
+	/* 先藏起來 讓JQ 打開 */
+	/* 只顯示第一個 */
+	display: none;
+}
+
+aside section#aside-nav ul.aside-menu-box > li > h5 + ul.aside-menu-block > li:not(:last-child){
+	/* 左側欄 分類選單 第二層 選單 */
+	margin-bottom: .4em;
+}
+
+@media screen and (max-width: 991px) {
+
+	aside section#aside-nav{
+		font-size: 1em;
+	}
+	
+}	
+
+@media screen and (max-width: 767px) {
+
+	aside section#aside-nav{
+		font-size: .9em;
+	}
+
+}	
+
+@media screen and (max-width: 479px) {
+
+	aside section#aside-nav{
+		font-size: 1.2em;
+	}
+
+}	
+
+/*-------- 以下 商品分類頁、商品詳細頁 ASIDE BANNER 側邊選單 廣告 --------*/
+
+
+aside section#aside-banner{
+	/* 左側欄 banner 廣告 */
+	padding: 2em 1em;
+	background-color: #efcadf;
+}
+
+aside section#aside-banner .aside-banner-wrap:not(:last-child){
+	/* 左側欄 banner 廣告 每一格外框*/
+	margin-bottom: 3em;
+}
+
+aside section#aside-banner .aside-banner-title{
+	/* 左側欄 banner區 標題外框 */
+}
+
+aside section#aside-banner .aside-banner-title img.icon{
+	/* 左側欄 banner區 標題 圖標 */
+	display: inline-block;
+	height: 1.4em;
+	vertical-align: bottom;
+}
+
+aside section#aside-banner .aside-banner-title h5{
+	/* 左側欄 banner區 標題*/
+	display: inline-block;
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #e40880;
+}
+
+aside section#aside-banner .aside-banner-wrap .video-block{
+	/* 左側欄 banner區 影片播放 外框*/
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding: 0 0 100% 0;
+}
+
+@media screen and (max-width: 767px) {
+
+	aside section#aside-banner{
+		padding: 0;
+		background-color: #fff;
+	}
+	
+	aside section#aside-banner .aside-banner-title + hr{
+		display: block;
+		height: 2px;
+	}
+
+	aside section#aside-banner .aside-banner-title img.icon{
+		height: 1em;
+	}
+
+	aside section#aside-banner .aside-banner-title h5{
+		font-size: 1em;
+	}
+
+}	
+
+
+/*-------- 以下 商品分類頁、商品詳細頁 MAIN SECTION 右側 共用樣式 --------*/
+
+
+main#product-classification-page{
+	/* 產品分類頁 外框 */
+}
+
+main#product-detail-page{
+	/* 產品詳細頁 外框 */
+}
+
+/*-------- 以下 商品分類頁、商品詳細頁 MAIN SECTION 右側 麵包屑 --------*/
+
+
+section.breadcrumb-wrap{
+	/* 麵包屑外框 */
+}
+
+.breadcrumb-wrap{
+	/* 麵包屑外框 */
+	font-size: .9em;
+	margin: .6em 0 1em 0 ;
+}
+
+.breadcrumb-wrap ul{
+	/* 麵包屑外框 */
+}
+
+.breadcrumb-wrap ul > li{
+	/* 麵包屑 每一格 */
+	display: inline-block;
+}
+
+.breadcrumb-wrap ul > li:not(:last-child)::after{
+	/* 麵包屑 每一格 */
+	display: inline-block;
+	font-family:FontAwesome;
+	content:"\f105";
+	font-size: 1em;
+	margin: 0 .4em;
+}
+
+@media screen and (max-width: 767px) {
+
+	.breadcrumb-wrap ul > li:not(:last-child)::after{
+		margin: 0 .2em;
+	}
+
+}	
+
+/*-------- 以下 商品分類頁、商品詳細頁 MAIN SECTION 右側 標題區塊樣式 --------*/
+
+
+main#product-classification-page #product-classification-slider-main{
+	/* 產品分類頁 上方大輪播 外框 */
+	/* 名稱綁 JQ 用 不作樣式 */
+}
+
+section .section-title-box{
+	/* 產品分類 商品詳細 標題 外框 */
+	text-align: left;
+	position: relative;
+	margin: 2em auto .6em;
+}
+
+section .section-title-box img.icon{
+	/* 產品分類 商品詳細 圖標 */
+	display: inline-block;
+	vertical-align: baseline;
+	height: 2em;
+	position: relative;
+	bottom: -4px;
+	margin-right: .2em;
+}
+
+section .section-title-box h3{
+	/* 產品分類 商品詳細 標題 */
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 1.8em;
+	color: #9c8579;
+	letter-spacing: 1px;
+	font-weight: normal;
+	margin: 0 auto;
+}
+
+section .section-title-box > .category-box {
+	/* 標題樣式下的 右側分類方式 外框 */
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	height: 30px;
+}
+
+section .section-title-box > .category-box ul.page-list-box{
+	/* 標題樣式下的 右側分類方式 頁面按鈕 */
+	margin-right: 1.4em;
+}
+
+@media screen and (max-width: 991px) {
+	
+	section .section-title-box{
+		margin-top: 1em;
+	}
+	section .section-title-box img.icon{
+		height: 1.6em;
+		margin-right: 0;
+	}
+
+	section .section-title-box h3{
+		font-size: 1.4em;
+	}
+	
+}	
+
+@media screen and (max-width: 767px) {
+
+	section .section-title-box{
+		margin-top: 1.2em;		
+	}
+
+}	
+
+@media screen and (max-width: 667px) {
+
+	section .section-title-box{
+		margin-top: 1.4em;
+	}
+
+	section .section-title-box img.icon{
+		height: 1.2em;
+	}
+	
+	section .section-title-box h3{
+		font-size: 1.2em;
+	}
+
+}	
+
+
+/*-------- 以下 商品分類頁、商品詳細頁 商品列表清單 --------*/
+
+
+section ul.product-classification-box{
+	/* 產品分類列表的每一小格 */
+	/* 製作一個 ul 與 li 樣式，控制下邊距 */
+	padding: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+section ul.product-classification-box > li{
+	/* 產品分類列表的每一小格 */
+	/* 製作一個 ul 與 li 樣式，控制下邊距 */
+	margin-bottom: 1.6em;
+}
+
+
+/*-------- 以下 商品詳細頁 商品預覽內容 PRODUCT VIEW --------*/
+
+
+section#product-view{
+	/* 商品預覽框 */
+}
+
+section#product-view #product-photo-box{
+	/* 商品預覽 圖片外框 */
+	/* 使用 FLEX 外框 */
+}
+
+section#product-view #product-photo-box img{
+	/* 商品預覽 圖片 先設定大小 */
+	display: block;
+	width: 100%;
+}
+
+section#product-view #product-photo-box .main-photo-block{
+	/* 商品預覽 圖片 左邊大圖 */
+	padding-right: 1em;
+	width: calc(100% - 100px);
+}
+
+section#product-view #product-photo-box .view-photo-block{
+	/* 商品預覽 圖片 右邊小圖 */
+	width: 100px;
+}
+
+section#product-view #product-photo-box .view-photo-block ul li:not(:last-child){
+	/* 商品預覽 圖片 右邊小圖 每一格下邊距 */
+	margin-bottom: 1em;
+}
+
+section#product-view #product-photo-box .view-photo-block ul li img{
+	/* 商品預覽 圖片 右邊小圖 */
+	cursor: pointer;
+	transition: .3s linear opacity;
+}
+
+section#product-view #product-photo-box .view-photo-block ul li img:hover{
+	/* 商品預覽 圖片 右邊小圖 */
+	opacity: .8;
+}
+
+section#product-view .product-view-box{
+	/* 商品預覽 詳細內容外框 */
+	color: #231815;
+	padding-left: 3em;
+}
+
+section#product-view .product-view-box hr{
+	/* 商品預覽 詳細內容 分隔線*/
+	display: block;
+	height: 1px;
+	opacity: .2;
+	width: 100%;
+	background-color: #231815;
+	border-radius: 0;
+	margin: 1em auto;
+}
+
+section#product-view .product-view-box > h1{
+	/* 商品預覽 詳細內容 商品名稱 */
+	font-size: 1.6em;
+	line-height: 1.4;
+	margin-bottom: 0;
+	font-weight: normal;
+}
+
+section#product-view .product-view-box > p.intro{
+	/* 商品預覽 詳細內容 簡介外框 */
+	font-size: 1em;
+	line-height: 1.2;
+}
+
+section#product-view .product-view-box > .price-block{
+	/* 商品預覽 詳細內容 價錢外框 */
+}
+
+section#product-view .product-view-box > .price-block > span.sub{
+	/* 商品預覽 詳細內容 價錢 中文字 */
+	display: block;
+	font-size: 1em;
+	margin-bottom: 0;
+}
+
+section#product-view .product-view-box > .price-block > del.original-price{
+	/* 商品預覽 詳細內容 價錢 原價被刪掉的 */
+	font-size: 1.2em;
+	display: inline-block;
+	margin-right: 1em;
+}
+
+section#product-view .product-view-box > .price-block > del.original-price::before{
+	/* 商品預覽 詳細內容 價錢 原價被刪掉的 */
+	content: "$";
+	font-size: .8em;
+	position: relative;
+	bottom: 2px;
+}
+
+section#product-view .product-view-box > .price-block > del.original-price::after{
+	/* 商品預覽 詳細內容 價錢 原價被刪掉的 */
+	content: "元";
+}
+
+section#product-view .product-view-box > .price-block > strong.on-sale-price{
+	/* 商品預覽 詳細內容 價錢 原價被刪掉的 */
+	font-size: 2.2em;
+	display: inline-block;
+	color: #e40880;
+}
+
+section#product-view .product-view-box > .price-block > strong.on-sale-price::before{
+	/* 商品預覽 詳細內容 價錢 原價被刪掉的 */
+	content: "$";
+	font-size: .76em;
+	position: relative;
+	bottom: 2px;
+}
+
+section#product-view .product-view-box > .price-block > strong.on-sale-price::after{
+	/* 商品預覽 詳細內容 價錢 原價被刪掉的 */
+	content: "元";
+	font-size: .8em;
+}
+
+section#product-view .product-view-box > ul.product-sel{
+	/* 商品預覽 詳細內容 商品規格選擇外框 */
+}
+
+section#product-view .product-view-box > ul.product-sel > li{
+	/* 商品預覽 詳細內容 商品規格選擇 每一列 */
+	margin-bottom: 1.4em;
+}
+
+section#product-view .product-view-box > ul.product-sel .select-item{
+	/* 商品預覽 詳細內容 商品規格選擇 */
+	width: 80%;
+	max-width: 280px;
+}
+
+section#product-view .product-view-box > ul.product-sel .select-item select{
+	/* 商品預覽 詳細內容 商品規格選擇 */
+	padding-right: 3em;
+}
+
+section#product-view .product-view-box > ul.product-sel .count-edit-box{
+	/* 商品預覽 詳細內容 商品數量 */
+	width: 140px;
+}
+
+section#product-view .product-view-box > ul.product-sel a.btn{
+	/* 商品預覽 詳細內容 購買按鈕 */
+	width: 40%;
+	display: inline-block;
+	border-width: 1px;
+	margin-right: .2em;
+}
+
+section#product-view .product-view-box > ul.product-sel a.btn:hover{
+	/* 商品預覽 詳細內容 購買按鈕 */
+	color: #e40880;
+	border-color: #e40880;
+	background-color: #fff;
+}
+
+@media screen and (max-width: 1199px) {
+
+	section#product-view #product-photo-box .main-photo-block{
+		padding: 0;
+		width: 100%;
+		margin-bottom: .6em;
+	}
+
+	section#product-view #product-photo-box .view-photo-block{
+		width: 100%;
+	}
+
+	section#product-view #product-photo-box .view-photo-block ul li:not(:last-child){
+		margin-bottom: 0;
+	}
+
+	section#product-view .product-view-box{
+		padding-left: 1em;
+	}
+	
+}	
+
+@media screen and (max-width: 991px) {
+
+	section#product-view .product-view-box{
+		padding-left: .2em;
+	}
+
+	section#product-view .product-view-box > h1{
+		font-size: 1.4em;
+	}
+
+	section#product-view .product-view-box > .price-block > strong.on-sale-price{
+		font-size: 1.8em;
+	}
+
+	section#product-view .product-view-box > .price-block > del.original-price{
+		margin-right: .6em;
+	}
+	
+}	
+
+@media screen and (max-width: 839px) {
+
+	section#product-view .product-view-box > .price-block > span.sub{
+		font-size: .9em;
+	}
+
+	section#product-view .product-view-box > .price-block > del.original-price{
+		font-size: 1em;
+		margin-right: .4em;
+	}
+	
+}	
+
+@media screen and (max-width: 767px) {
+
+	section#product-view .product-view-box > .price-block > del.original-price{
+		font-size: .9em;
+		margin-right: .2em;
+	}
+
+
+	section#product-view .product-view-box > ul.product-sel a.btn{
+		width: calc(50% - .4em);
+		margin: 0 auto;	
+		font-size: 1.2em;
+		padding: .8em 0;
+	}
+
+	section#product-view .product-view-box > ul.product-sel li.shopping-car a.btn:nth-child(1){
+		float: left;
+	}
+	section#product-view .product-view-box > ul.product-sel li.shopping-car a.btn:nth-child(2){
+		float: right;
+	}
+
+}	
+
+@media screen and (max-width: 667px) {
+
+	section#product-view .product-view-box > h1{
+		font-size: 1.4em;
+	}
+
+	section#product-view .product-view-box > .price-block > strong.on-sale-price{
+		font-size: 1.6em;
+	}
+
+	section#product-view .product-view-box > ul.product-sel .count-edit-box{
+		width: 60%;
+		max-width: 60%;
+	}
+}	
+
+@media screen and (max-width: 479px) {
+
+	section#product-view .product-view-box > .price-block > strong.on-sale-price{
+		font-size: 2em;
+	}
+
+}	
+
+/*-------- 以下 商品詳細頁 詳細內容 PRODUCT DETAIL --------*/
+
+
+section#product-detail{
+	/* 商品詳細內容框 */
+}
+
+section#product-detail .section-title-box{
+	/* 把標題的下邊距刪掉 避免在動畫的時候出現差格*/
+}
+
+section#product-detail #detail-toggle-btn{
+	/* 商品詳細內容 展開是否的按鈕 */
+	display: inline-block;
+	cursor: pointer;
+	width: auto;
+	padding: .26em .6em;
+	height: auto;
+	line-height: 1;
+	font-size: 1.2em;
+	position: relative;
+	overflow-y: hidden;
+	vertical-align: top;
+}
+
+section#product-detail #detail-toggle-btn span.open{
+	/* 商品詳細內容 展開是否的按鈕 */
+	position: absolute;
+	left: .5em;
+	top: .26em;
+	margin: auto;
+	transform: scaleY(1);
+	transition: .3s linear transform;
+}
+
+section#product-detail #detail-toggle-btn span.close{
+	/* 商品詳細內容 展開是否的按鈕 */
+	position: absolute;
+	left: .5em;
+	top: .26em;
+	margin: auto;
+	transition: .3s linear transform;
+	transform: scaleY(0);
+}
+
+section#product-detail #detail-toggle-btn.open span.open{
+	/* 商品詳細內容 展開是否的按鈕 */
+	/* 當打開的時候，告上一個 open */
+	transform: scaleY(0);
+}
+
+section#product-detail #detail-toggle-btn.open span.close{
+	/* 商品詳細內容 展開是否的按鈕 */
+	/* 當打開的時候，告上一個 open */
+	transform: scaleY(1);
+}
+
+section#product-detail #detail-toggle-btn::after{
+	/* 商品詳細內容 展開是否的按鈕 平常關起來的時候*/
+	font-family:FontAwesome;
+	display: inline-block;
+	content:"\f0d7 ";
+	font-size: 1.2em;
+	position: relative;
+	transition: .3s linear transform;
+	transform: scaleY(1);
+}
+
+section#product-detail #detail-toggle-btn.open::after{
+	/* 商品詳細內容 展開是否的按鈕 加上打開 open 的 class 的時候 */
+	transform: scaleY(-1);
+}
+
+section#product-detail #product-detail-box {
+	/* 商品詳細介紹 會收折的區塊 外框*/
+	/* 平常隱藏起來 */
+	display: none;
+	padding: 1em 0;
+}
+
+section#product-detail #product-detail-box .web-editor{
+	/* 商品詳細介紹 網頁編輯器 */
+	margin-bottom: 3em;
+}
+
+section#product-detail #product-detail-box ul.default-editor{
+	/* 商品詳細介紹 自行上架編輯器 外框 */
+	margin-bottom: 3em;
+}
+
+section#product-detail #product-detail-box ul.default-editor > li:not(:last-child){
+	/* 商品詳細介紹 自行上架編輯器 每一列 */
+	margin-bottom: 2em;
+}
+
+section#product-detail #product-detail-box ul.default-editor > li p{
+	/* 商品詳細介紹 自行上架編輯器 每一列 */
+	font-size: 1.2em;
+}
+
+section#product-detail #product-detail-box ul.default-editor > li img{
+	/* 商品詳細介紹 自行上架編輯器 每一列 */
+	display: block;
+	width: auto;
+	max-width: 100%;
+	margin-bottom: 1em;
+}
+
+section#product-detail #product-detail-box table.talbe-editor {
+	/* 商品詳細介紹 自行上架編輯器 產品規格 用表格呈現 */
+	border-collapse:collapse;
+	width: 100%;
+	font-size: 1.2em;
+	max-width: 900px;
+	margin-bottom: 3em;
+}
+
+section#product-detail #product-detail-box table.talbe-editor tr{
+	/* 商品詳細介紹 自行上架編輯器 產品規格 用表格呈現 */
+	border: 0;
+	border-radius: 10px;
+}
+
+section#product-detail #product-detail-box table.talbe-editor tr td{
+	/* 商品詳細介紹 自行上架編輯器 產品規格 用表格呈現 */
+	padding: 1em 2em;
+	border: 0;
+}
+
+section#product-detail #product-detail-box table.talbe-editor tr td:nth-child(1){
+	/* 商品詳細介紹 自行上架編輯器 產品規格 用表格呈現 */
+	background-color: #e40880;
+	color: #fff;
+	width: 30%;
+	border: 1px solid #fff;
+}
+
+section#product-detail #product-detail-box table.talbe-editor tr td:last-child{
+	/* 商品詳細介紹 自行上架編輯器 產品規格 用表格呈現 */
+	width: 70%;
+	border: 1px solid #ccc;
+}
+
+section#product-detail #product-detail-box table.talbe-editor tr:nth-child(1) td:nth-child(1){
+	/* 商品詳細介紹 自行上架編輯器 產品規格 用表格呈現 */
+	border-radius: 8px 0 0 0;
+}
+
+section#product-detail #product-detail-box table.talbe-editor tr:last-child td:nth-child(1){
+	/* 商品詳細介紹 自行上架編輯器 產品規格 用表格呈現 */
+	border-radius: 0 0 0 8px;
+}
+
+@media screen and (max-width: 991px) {
+
+	section#product-detail #detail-toggle-btn{
+		font-size: 1em;
+		padding: 0 .8em;
+		line-height: 1.4em;
+	}
+
+	section#product-detail #detail-toggle-btn span.open , 
+	section#product-detail #detail-toggle-btn span.close {
+		top:0;
+	} 
+	
+	section#product-detail #product-detail-box table.talbe-editor{
+		font-size: 1em;
+	}
+	section#product-detail #product-detail-box table.talbe-editor tr td{
+		padding: .8em 1em;
+	}
+	
+}	
+
+@media screen and (max-width: 767px) {
+
+	section#product-detail{
+		/* 商品詳細內容的外框 */
+		/* 作一個下邊線 */
+		/* 以防在手機版的時候看不出分隔的樣子*/
+		position: relative;
+		padding-bottom: .2em;
+		margin-top: 2em;
+	}
+
+	section#product-detail::after{
+		/* 商品詳細內容的外框 */
+		/* 作一個下邊線 */
+		/* 以防在手機版的時候看不出分隔的樣子*/
+		content: "";
+		display: block;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		width: 100%;
+		height: 2px;
+		border-radius: 99em;
+		background-color: #e40880;
+		opacity: .8;
+	}
+	
+	section#product-detail #product-detail-box .web-editor , 
+	section#product-detail #product-detail-box ul.default-editor , 
+	section#product-detail #product-detail-box table.talbe-editor{
+		margin-bottom: 2em;
+	}
+
+	section#product-detail #product-detail-box ul.default-editor > li img{
+		margin-bottom: .8em;
+	}
+
+	section#product-detail #product-detail-box ul.default-editor > li p{
+		font-size: 1em;
+		margin-bottom: .8em;
+	}
+
+	section#product-detail #product-detail-box table.talbe-editor tr td{
+		padding: .6em
+	}
+
+	section#product-detail #product-detail-box table.talbe-editor tr td:nth-child(1){
+		width: 25%;
+	}
+
+	section#product-detail #product-detail-box table.talbe-editor tr td:last-child{
+		width: 75%;
+	}
+
+}	
+
+@media screen and (max-width: 667px) {
+
+	section#product-detail #detail-toggle-btn{
+		font-size: .9em;
+	}
+
+}	
+
+/*-------- 註解寫在這兒☆ --------*/
+/*-------- 註解寫在這兒☆ --------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------- 以下空白 --------*/
+

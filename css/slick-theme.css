@@ -1,0 +1,262 @@
+@charset 'UTF-8';
+/*-------- SLICK SLIDER --------*/
+/*-------- http://kenwheeler.github.io/slick/ --------*/
+/*---- reWriten by chalterra.ann 201712 ----*/
+
+/*-------- SLIDER --------*/
+
+.slick-loading .slick-list {
+	background-color: #fff;
+	background-image: url('../images/ajax-loader.gif');
+	background-position: center;
+	background-repeat: no-repeat; 
+}
+
+/*-------- ICONS --------*/
+
+@font-face{
+	font-family: 'slick';
+	font-weight: normal;
+	font-style: normal;
+
+	src: url('../fonts/slick.eot');
+	src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
+}
+
+/*-------- ARROWS --------*/
+
+.slick-prev,
+.slick-next {
+	font-size: 1em;
+	line-height: 1;
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 1em;
+	text-align: center;
+	/*height: 52px;*/
+	padding: 0;
+	opacity: 0;
+	/* 透明設定 0 */
+	/* hover 之後才會出現 */
+	transition: .3s linear opacity , .3s linear left , .3s linear right;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	cursor: pointer;
+	color: transparent;
+	border: none;
+	outline: none;
+	background: transparent;
+	z-index: 6;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+	color: transparent;
+	outline: none;
+	background: transparent;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+	opacity: .6;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+	opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before,
+.slick-prev:after,
+.slick-next:after {
+	/*font-family: 'slick';*/
+	font-family:FontAwesome;
+	line-height: 1;
+	transition: .3s linear opacity;
+	color: #716558;
+	opacity: .4;
+	font-size: 4em;
+	text-shadow: 
+	    0 0 2px #fff ,
+	    0 0 2px #fff ,
+	    0 0 2px #fff ,
+	    0 0 2px #fff ,
+	    0 0 2px #fff ,
+	    0 0 2px #fff ,
+	    0 0 2px #fff ,
+	    0 0 2px #fff ,
+	    0 0 2px #fff ,
+	    0 0 2px #fff ,
+	    0 0 2px #fff ,
+	    0 0 2px #fff ,
+	    0 0 2px #fff ,
+	    0 0 2px #fff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {   
+	text-align: left;
+	left: 0em;
+}
+
+.slick-slider:hover .slick-prev {
+	left: .6em;
+}
+
+[dir='rtl'] .slick-prev {
+	/*right: -1em;*/
+	/*left: auto;*/
+}
+
+.slick-prev:before {
+	content:"\f0d9 ";
+	/*content: '←';*/
+}
+
+[dir='rtl'] .slick-prev:before{
+	content: '→';
+}
+
+.slick-next {
+	text-align: right;
+	right: .2em;
+}
+
+.slick-slider:hover .slick-next {
+	right: .8em;
+}
+
+[dir='rtl'] .slick-next {
+	/*right: auto;*/
+	/*left: -1em;*/
+}
+
+.slick-next:before {
+	content:"\f0da ";
+	/*content: '→';*/
+}
+
+[dir='rtl'] .slick-next:before {
+	content: '←';
+}
+
+.slick-slider:hover .slick-prev ,
+.slick-slider:hover .slick-next {
+	/* hover 外框後出現 arrow */
+	opacity: 1;
+}
+
+
+/*-------- DOTS --------*/
+
+.slick-dotted.slick-slider {
+	/*margin-bottom: 30px;*/
+}
+
+ul.slick-dots{
+	/* 點點按鈕 */
+	position: absolute;
+	right: 1em;
+	height: 1em;
+	top: .6em;
+	bottom: auto;
+	left: auto;
+	width: auto;
+	display: block;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+
+	ul.slick-dots{
+		/* 點點按鈕 */
+		top: auto;
+		bottom: .4em;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+}	
+
+ul.slick-dots > li{ 
+	/* 點點按鈕 */
+	margin: .2em;
+	position: relative;
+	display: inline-block;
+	width: auto;
+	height: auto;
+	margin-left: .4em;
+	padding: 0;
+	cursor: pointer;
+}
+
+.slick-dots li button {
+	display: block;
+	width: 1em;
+	height: 1em;
+	cursor: pointer;
+	color: transparent;
+	border: 0;
+	outline: none;
+	background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+	outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+	opacity: .6;
+}
+
+.slick-dots li button:before {
+	/*font-family: 'slick';*/
+	font-size: 1em;
+	line-height: 1;
+	border-radius: 99em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: .6em;
+	height: .6em;
+	content: '';
+	display: block;
+	background-color: #111;
+	text-align: center;
+	opacity: .26;
+	color: black;
+	transition: .2s linear opacity;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 767px) {
+
+	.slick-dots li button:before {
+		width: .4em;
+		height: .4em;
+	}	
+
+}	
+
+.slick-dots li.slick-active button:before {
+	opacity: .75;
+	color: black;
+}
+
+
+/*-------- 以下空白 --------*/
